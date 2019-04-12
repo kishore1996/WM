@@ -1,0 +1,95 @@
+{
+  "name" : "sqrfiles",
+  "description" : "sqrfiles",
+  "packageName" : "com.readthefile.sqrfiles",
+  "cascadeEnabled" : false,
+  "draft" : false,
+  "tables" : [ {
+    "name" : "fileinfo",
+    "oldName" : "fileinfo",
+    "entityName" : "Fileinfo",
+    "type" : "TABLE",
+    "schema" : null,
+    "catalog" : "sqrfiles",
+    "filter" : null,
+    "ignoreRefreshAfterInsert" : false,
+    "columns" : [ {
+      "name" : "ID",
+      "oldName" : "ID",
+      "fieldName" : "id",
+      "sqlType" : "number",
+      "javaType" : "integer",
+      "length" : 0,
+      "scale" : 0,
+      "precision" : 10,
+      "nullable" : false,
+      "hidden" : false,
+      "columnValue" : {
+        "insertable" : true,
+        "updatable" : true,
+        "defaultValue" : "",
+        "type" : "user-defined"
+      },
+      "constraintList" : [ ]
+    }, {
+      "name" : "filename",
+      "oldName" : "filename",
+      "fieldName" : "filename",
+      "sqlType" : "string",
+      "javaType" : "string",
+      "length" : 255,
+      "scale" : 0,
+      "precision" : 0,
+      "nullable" : true,
+      "hidden" : false,
+      "columnValue" : {
+        "insertable" : true,
+        "updatable" : true,
+        "defaultValue" : "",
+        "type" : "user-defined"
+      },
+      "constraintList" : [ ]
+    }, {
+      "name" : "filecontent",
+      "oldName" : "filecontent",
+      "fieldName" : "filecontent",
+      "sqlType" : "blob",
+      "javaType" : "blob",
+      "length" : -1,
+      "scale" : 0,
+      "precision" : 0,
+      "nullable" : true,
+      "hidden" : false,
+      "columnValue" : {
+        "insertable" : true,
+        "updatable" : true,
+        "defaultValue" : null,
+        "type" : "user-defined"
+      },
+      "constraintList" : [ ]
+    } ],
+    "primaryKey" : {
+      "name" : "PRIMARY",
+      "virtual" : false,
+      "columns" : [ "ID" ],
+      "generator" : {
+        "generatorType" : "identity",
+        "generatorValue" : null,
+        "schemaName" : null
+      },
+      "composite" : false
+    },
+    "temporals" : [ ],
+    "relations" : [ ],
+    "constraints" : [ ],
+    "tableDataLockingOptions" : {
+      "versionColumnName" : "VERSION",
+      "lockingStrategy" : "NONE",
+      "overrideStrategy" : "INHERIT"
+    }
+  } ],
+  "dataLockingOptions" : {
+    "versionColumnName" : "VERSION",
+    "lockingStrategy" : "NONE"
+  }
+}

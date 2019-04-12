@@ -1,0 +1,18 @@
+<wm-page pagetitle="Databasepage" name="page1">
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav>
+    <wm-content name="content1">
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel>
+        <wm-page-content columnwidth="8" name="page_content1">
+            <wm-table name="FileinfoTable1" title="Fileinfo List" dataset="bind:Variables.SqrfilesFileinfoData1.dataSet" navigation="None">
+                <wm-table-column binding="id" caption="Id" generator="identity" pcdisplay="true" mobiledisplay="true" type="integer" primary-key="true" readonly="true"></wm-table-column>
+                <wm-table-column binding="filename" caption="Filename" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                <wm-table-column binding="filecontent" widget-type="anchor" caption="Filecontent" generator="assigned" pcdisplay="true" mobiledisplay="true" type="blob">
+                    <wm-anchor caption="" hyperlink="bind:row.getProperty('filecontent')" target="_blank" iconclass="wm-icon wm-icon24 wi wi-file" class="col-md-9" show="bind:row.getProperty('filecontent')!= null"></wm-anchor>
+                </wm-table-column>
+            </wm-table>
+        </wm-page-content>
+        <wm-right-panel columnwidth="2" content="rightnav" name="right_panel1"></wm-right-panel>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
+</wm-page>

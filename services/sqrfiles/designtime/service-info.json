@@ -1,0 +1,6 @@
+{
+  "id" : "sqrfiles",
+  "type" : "DataService",
+  "packageNames" : [ "com.readthefile.sqrfiles" ],
+  "title" : "sqrfiles"
+}

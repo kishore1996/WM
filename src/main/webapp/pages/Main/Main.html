@@ -1,0 +1,22 @@
+<wm-page name="mainpage" pagetitle="Main">
+    <wm-header content="header" name="header" height="auto"></wm-header>
+    <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
+    <wm-content name="content">
+        <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
+        <wm-page-content columnwidth="8" name="mainContent" padding="unset 15px" backgroundcolor="#fffffff">
+            <wm-layoutgrid name="layoutgrid2">
+                <wm-gridrow name="gridrow3">
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn5">
+                        <wm-fileupload name="fileupload1" on-select="Variables.FileServiceUploadFile.invoke()"></wm-fileupload>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="8" name="gridcolumn6">
+                        <wm-button class="btn-default" caption="Show" type="button" margin="unset 0.5em" name="button3" on-click="button3Click($event, widget)"></wm-button>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+            <wm-iframe name="iframe1" id="editor" show="true" width="800px" height="500px"></wm-iframe>
+        </wm-page-content>
+        <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
+    </wm-content>
+    <wm-footer name="footer" content="footer"></wm-footer>
+</wm-page>

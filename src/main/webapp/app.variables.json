@@ -1,0 +1,82 @@
+{
+  "appNotification" : {
+    "_id" : "wm-appErrorHandler-wm.NotificationVariable-1454664620943",
+    "name" : "appNotification",
+    "owner" : "App",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "class",
+      "value" : "Error",
+      "type" : "list"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "bottom right",
+      "type" : "list"
+    } ],
+    "operation" : "toast"
+  },
+  "goToPage_Bulkuploadpage" : {
+    "_id" : "wm-goToPage_Bulkuploadpage-wm.NavigationVariable-1554906735385",
+    "name" : "goToPage_Bulkuploadpage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "Bulkuploadpage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_databasepage" : {
+    "_id" : "wm-goToPage_databasepage-wm.NavigationVariable-1554905948617",
+    "name" : "goToPage_databasepage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "databasepage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_datatable" : {
+    "_id" : "wm-goToPage_datatable-wm.NavigationVariable-1554092522300",
+    "name" : "goToPage_datatable",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "datatable",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Main" : {
+    "_id" : "wm-wm.NavigationVariable1389180517517",
+    "name" : "goToPage_Main",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "operation" : "gotoPage",
+    "pageName" : "Main"
+  },
+  "goToPage_upload_page" : {
+    "_id" : "wm-goToPage_upload_page-wm.NavigationVariable-1554905276343",
+    "name" : "goToPage_upload_page",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "upload_page",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "supportedLocale" : {
+    "_id" : "wm-wm.Variable1402640443182",
+    "name" : "supportedLocale",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataSet" : {
+      "en" : "English"
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  }
+}
